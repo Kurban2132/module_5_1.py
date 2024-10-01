@@ -8,9 +8,12 @@ class House():
     def go_to(self, new_floor):
         self.new_floor = new_floor
         print(new_floor)
-        if new_floor > self.number_of_floors:
-            new_floor < 1
-            print("Такого этажа не существует")
+        for go_to in range(1, 6):
+            print(go_to)
+        if new_floor > self.number_of_floors or new_floor < 1:
+            print('"Такого этажа не существует"')
+
+
 
 
 h1 = House('ЖК Горский', 18)
