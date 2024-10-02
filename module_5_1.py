@@ -7,15 +7,15 @@ class House():                                      #Создаем класс H
 
 
     def go_to(self, new_floor):
-        self.new_floor = int()
         print(1, new_floor)  #Метод go_to выводит на экран(в консоль) значения от 1 до new_floor(включительно).
+        if new_floor > self.number_of_floors or new_floor < 1:
+            print('"Такого этажа не существует"')
 
-        print(new_floor)                          #Выводить этаж для h1 и h2
         for new_floor in range(1, new_floor + 1): #Вывод количество этажей
             print(new_floor)
+            
 
-        if self.new_floor > self.number_of_floors or self.new_floor < 1:
-            print('"Такого этажа не существует"')
+
 
 
 
